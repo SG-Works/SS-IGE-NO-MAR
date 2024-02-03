@@ -46,6 +46,10 @@ Output of this file is a plots containing the quality of approximation of given 
 
 
 
-4) ISE_DFS_NO_SS_Ren.py
+4) ISE_DFS_NO_SS_NO_MAR_Ren.py (Our method)
 
-This code takes a datastream, mies out frequent closed episodes of that datastream under expriry constraint 'T_x' and frequency threshold 'F_th'. It then calculated the Statistical significance threshold for each of these frequent closed episodes and finally provides those episodes which qualified under statistical significance threshold.
+This code takes a datastream, mines out frequent closed episodes of that datastream under expriry constraint 'T_x' and frequency threshold 'F_th'. It then calculated the Statistical significance threshold for each of these frequent closed episodes under Markov Null and finally provides those episodes which qualified under statistical significance threshold.
+
+5) ISE_DFS_NO_SS_NO_IID_Ren.py (Baseline)
+
+This code takes a datastream, mines out frequent closed episodes of that datastream under expriry constraint 'T_x' and frequency threshold 'F_th'. It then calculated the Statistical significance threshold for each of these frequent closed episodes under IID Null and finally provides those episodes which qualified under statistical significance threshold.
