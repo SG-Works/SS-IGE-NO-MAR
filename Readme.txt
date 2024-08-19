@@ -70,7 +70,7 @@ Inference: No Noisy patterns detected for NOMAR even with high value of c=0.1, w
 Table 1(b) : The case where two 4-node episodes are embedded
 Dataset: "Datastream_M_40_n_10000_emb_2_N_4_p_0.015_eta_0.5_probs_sparse_nclus_10.txt"
 Tx = 50
-FT = 60
+FT = 55
 c = 0.01
 Inference: No significant episodes generated for NOIID even with high value of c=0.01, where as both embedded episodes are seen for NOMAR (along with a few episodes containing combinations of events present in embedded episodes)
 
