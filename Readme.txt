@@ -53,3 +53,27 @@ This code takes a datastream, mines out frequent closed episodes of that datastr
 5) ISE_DFS_NO_SS_NO_IID_Ren.py (Baseline)
 
 This code takes a datastream, mines out frequent closed episodes of that datastream under expriry constraint 'T_x' and frequency threshold 'F_th'. It then calculated the Statistical significance threshold for each of these frequent closed episodes under IID Null and finally provides those episodes which qualified under statistical significance threshold.
+
+
+
+Datasets and parameters used.
+
+Table 1(a): The case where no episodes are embedded.
+Dataset: "Datastream_M_40_n_10000_probs_sparse.txt"
+Tx = 50
+FT = 60
+c = 0.1
+Inference: No Noisy patterns detected for NOMAR even with high value of c=0.1, where as noisy patterns are seen for NOIID.
+
+
+
+Table 1(b) : The case where two 4-node episodes are embedded
+Dataset: "Datastream_M_40_n_10000_emb_2_N_4_p_0.015_eta_0.5_probs_sparse_nclus_10.txt"
+Tx = 50
+FT = 60
+c = 0.01
+Inference: No significant episodes generated for NOIID even with high value of c=0.01, where as both embedded episodes are seen for NOMAR (along with a few episodes containing combinations of events present in embedded episodes)
+
+Additional Datasets you may want to use:
+The case where two 5-node episodes are embedded: Datastream_M_40_n_10000_emb_2_N_5_p_0.015_eta_0.5_probs_sparse_nclus_10.txt
+The case where two 6-node episodes are embedded: Datastream_M_40_n_10000_emb_2_N_6_p_0.015_eta_0.5_probs_sparse_nclus_10.txt
