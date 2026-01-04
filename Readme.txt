@@ -58,7 +58,7 @@ This code takes a datastream, mines out frequent closed episodes of that datastr
 
 Datasets and parameters used.
 
-Table 1(a): The case where no episodes are embedded.
+Table 3: The case where no episodes are embedded.
 Dataset: "Datastream_M_40_n_10000_probs_sparse.txt"
 Tx = 50
 FT = 60
@@ -67,7 +67,7 @@ Inference: No Noisy patterns detected for NOMAR even with high value of c=0.1, w
 
 
 
-Table 1(b) : The case where two 4-node episodes are embedded
+Table 4 : The case where two 4-node episodes are embedded
 Dataset: "Datastream_M_40_n_10000_emb_2_N_4_p_0.015_eta_0.5_probs_sparse_nclus_10.txt"
 Tx = 50
 FT = 55
@@ -75,5 +75,6 @@ c = 0.01
 Inference: No significant episodes generated for NOIID even with high value of c=0.01, where as both embedded episodes are seen for NOMAR (along with a few episodes containing combinations of events present in embedded episodes)
 
 Additional Datasets you may want to use:
-The case where two 5-node episodes are embedded: Datastream_M_40_n_10000_emb_2_N_5_p_0.015_eta_0.5_probs_sparse_nclus_10.txt with Tx = 50, Fth = 50, c = 0.01
+The case where two 5-node episodes are embedded: Datastream_M_40_n_10000_emb_2_N_5_p_0.015_eta_0.5_probs_sparse_nclus_10.txt with Tx = 50, Fth = 50, c = 0.01 (Table 5)
 The case where two 6-node episodes are embedded: Datastream_M_40_n_10000_emb_2_N_6_p_0.015_eta_0.5_probs_sparse_nclus_10.txt with Tx = 50, Fth = 50, c = 0.01
+
